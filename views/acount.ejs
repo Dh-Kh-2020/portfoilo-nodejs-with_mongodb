@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="assets/css/bootstrap-grid.css"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../../assets/css/master.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+	<title>DHR</title>
+</head>
+<body class="sb-nav-fixed" style="background-color: #fff;">
+        <!-- ====== START HEADER ====== -->
+        <nav class="sb-topnav navbar navbar-expand-lg navbar-light bg-light container-fluid hd">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-4 brand" href="../../index.html">D<span class="worning">HR</span></a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 text-muted" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-danger" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <!-- <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a> -->
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../../assets/imgs/profile/computer-icons-icon-design-user-female-png-favpng-Fsujht93KTGPZWpH8vs1JxSwb.png" class="personal-photo" alt="">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="dashboard.html">Profile</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="../../index.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+	<!-- ====== END HEADER ====== -->
+
+    <!-- ====== START SIDEBAR  ====== -->
+    <main>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <!-- Dashboard Section -->
+                <section class="col-lg-3 col-md-3 col-12 mt-4 ms-0" id="navbarTogglerDemo02">
+                    <div class="card bg-light ps-3 pt-2"  style="position: fixed; width: 25vw;">
+                        <div class="row">
+                            <!-- image profile -->
+                            <div class="col-12 d-flex justify-content-center align-items-center p-4 position-relative">
+                                <img src="../../assets/imgs/profile/computer-icons-icon-design-user-female-png-favpng-Fsujht93KTGPZWpH8vs1JxSwb.png" width="50%" class="img-fluid rounded-circle" alt="">
+                                <a role="button" data-bs-toggle="modal" data-bs-target="#editImg" class="position-absolute bg-white
+                                    border border-primary rounded d-flex justify-content-center align-items-lg-center rounded-circle" 
+                                    style="bottom: 10%;left: 35%; width: 30px;height: 30px;">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                            </div>
+                            <div class="col-12 text-center mb-2">
+                                <a class="fs-4 fw-bold text-red" href="">Dhoha Alkhorasani</a>
+                                <p>An Engineer</p>
+                            </div>
+                            <!-- navegation dashboard -->
+                            <div class="col-12">
+                                <nav class="row pt-0">
+                                    <header class="col-12 mb-2">
+                                        <h3 class="text-secondary fs-6">Dashboard</h3>
+                                    </header>
+                                    <div class="col-4 pt-2">
+                                        <article class="h--75">
+                                            <a href="dashboard.html" class="d-flex align-items-center text-blue">
+                                                <i class="bi bi-house-door fs-6"></i>
+                                                <span class="fs-6 fw-bold ms-3">home</span>
+                                            </a>
+                                        </article>
+                                    <!-- </div>
+                                    <div class="col-4"> -->
+                                        <article class="h--75 pt-2">
+                                            <a href="acount.html" class="d-flex align-items-center text-blue">
+                                                <i class="bi bi-person fs-6"></i>
+                                                <span class="fs-6 fw-bold ms-3">Account</span>
+                                            </a>
+                                        </article>
+                                    <!-- </div>
+                                    <div class="col-4 mb-4"> -->
+                                        <article class="h--75 pt-2">
+                                            <a href="skills.html" class="d-flex align-items-center text-blue">
+                                                <i class="bi bi-graph-up-arrow fs-6"></i>
+                                                <span class="fs-8 fw-bold ms-3">Skills</span>
+                                            </a>
+                                        </article>
+                                    <!-- </div>
+                                    <div class="col-4"> -->
+                                        <article class="h--75 pt-2">
+                                            <a href="experience.html" class="d-flex align-items-center text-blue">
+                                                <i class="bi bi-lightning fs-6"></i>
+                                                <span class="fs-6 fw-bold ms-3">Experience</span>
+                                            </a>
+                                        </article>
+                                    <!-- </div>
+                                    <div class="col-4"> -->
+                                        <article class="h--75 pt-2">
+                                            <a href="qualification.html" class="d-flex align-items-center text-blue">
+                                                <i class="bi bi-mortarboard fs-6"></i>
+                                                <span class="fs-6 fw-bold ms-3">Qualification</span>
+                                            </a>
+                                        </article>
+                                    <!-- </div>
+                                    <div class="col-4 mb-4"> -->
+                                        <article class="h--75 mb-5 pt-2">
+                                            <a href="course.html" class="d-flex align-items-center text-blue">
+                                                <i class="bi bi-card-checklist fs-6"></i>
+                                                <span class="fs-6 fw-bold ms-3">Courses</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Content Section -->
+                <section class="col-lg-8 col-md-8 col-12 mt-5">
+                    <div class="p-3">
+                        <div class="card-header bg-transparent">
+                            <h1 class="fs-3 fw-bold text-warning">Acount</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <form class="row g-3 needs-validation" novalidate>
+                                        <div class="col-12">
+                                            <div class="input-group flex-nowrap">
+                                                <input type="text" class="form-control" placeholder="User Name" aria-label="fName" aria-describedby="addon-wrapping" required>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-4">
+                                            <div class="input-group flex-nowrap">
+                                                <select class="form-select rounded-pill" aria-label="Default select example" required>
+                                                    <option selected>+967</option>
+                                                    <option value="1">+965</option>
+                                                    <option value="2">+965</option>
+                                                    <option value="3">+965</option>
+                                                </select>
+                                            </div>
+                                        </div> -->
+                                        <div class="col-12">
+                                            <div class="input-group flex-nowrap">
+                                                <label class="border bg-light text-muted d-flex align-items-center justify-content-center px-2">+967</label>
+                                                <input type="tel" class="form-control" placeholder="Phone Number" aria-label="phone" aria-describedby="addon-wrapping" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group flex-nowrap">
+                                                <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="addon-wrapping" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group flex-nowrap">
+                                                <select class="form-select" aria-label="Default select example" required>
+                                                        <option selected class="text-muted">Gnder</option>
+                                                        <option value="1">Female</option>
+                                                        <option value="2">Male</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group flex-nowrap">
+                                                <input type="date" name="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-5 ">
+                                            <button class="btn btn-danger d-block col-12 rounded-pill" type="submit">Save</button>
+                                            <!-- <button class="btn btn-danger d-block col-2 rounded-pill" type="submit">Save</button> -->
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Edit Image Profile -->
+    <div class="modal fade" id="editImg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-bold text-center" id="exampleModalLabel">Change Your Image</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <!-- Job details -->
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning text-muted">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====== END SIDEBAR ====== -->
+
+	<script src="../../assets/js/bootstrap.js"></script>
+	<script src="../../assets/js/jquery-3.6.0.min.js"></script>
+</body>
+</html>
