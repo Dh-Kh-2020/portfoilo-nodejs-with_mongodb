@@ -140,7 +140,7 @@
                                 <div class="col bg-warning text-dark p-3 fw-bold" style="opacity: 60%;">Personal Info</div>
                             </div>
 
-                            <form action="/dashboard" method="POST" enctype="multipart/form-data">
+                            <form action="/dashboard" method="POST" enctype='multipart/form-data'> <!--  enctype="multipart/form-data" -->
                                 <div class="row">
                                     <div class="col border text-dark p-3 fw-light">
                                         <label for="#fullName">Full Name: </label> 
@@ -162,14 +162,12 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <!-- <div class="col border text-dark p-3 fw-light">Phone: 773965471</div> -->
                                     <div class="col border text-dark p-3 fw-light">
                                         <label for="#profile_picture">Enter Picture (only jpg)</label>
                                         <input type="file" name="profile_picture" id="profile_picture">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <!-- <div class="col border text-dark p-3 fw-light">Skills: HTML, CSS, Javascript, PHP</div> -->
                                     <div class="col border text-dark p-3 fw-light">
                                         <label for="#cv">Enter CV (only pdf)</label>
                                         <input type="file" name="cv" id="cv">
@@ -178,7 +176,7 @@
                                 <div class="row">
                                     <!-- <div class="col border text-dark p-3 fw-light">Skills: HTML, CSS, Javascript, PHP</div> -->
                                     <div class="col border text-dark p-3 fw-light">
-                                        <input type="submit" name="submit" id="submit">
+                                        <input type="submit" name="submit" id="submit" value="send">
                                     </div>
                                 </div>
                             </form>
